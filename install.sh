@@ -10,5 +10,11 @@ sudo apt-get install libjpeg-dev
 sudo apt-get install libopenexr-dev
 sudo apt-get install libtiff-dev
 sudo apt-get install libwebp-dev
- sudo apt-get install git
- https://github.com/opencv/opencv.git
+sudo apt-get install git
+sudo git clone https://github.com/opencv/opencv.git
+cd opencv
+mkdir build
+cd build
+cmake ../
+make
+sudo make install
